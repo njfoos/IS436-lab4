@@ -6,137 +6,106 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
-  <body>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container-fluid d-flex align-items-center justify-content-between p-2">
+      <a class="navbar-brand" href="#">
+        <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo" height="50">
+      </a>
 
+      <form class="d-flex mx-3" role="search" style="flex: 1; max-width: 400px;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
 
-<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
-  <div class="container-fluid d-flex align-items-center justify-content-between">
-    
-   <div class="container-fluid d-flex align-items-center justify-content-between p-2">
+      <div class="d-flex align-items-center">
+        <div class="dropdown me-3">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Social Media
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+            <li><a class="dropdown-item" href="#">Twitter</a></li>
+            <li><a class="dropdown-item" href="#">Instagram</a></li>
+            <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-warning">MyUMBC</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER SECTION -->
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Department of Information Systems</h1>
+    <div class="col-lg-8 mx-auto">
+      <p class="lead mb-4">
+        Our Vision is to expand our role as global leaders at the intersection of information, technology, and people, 
+        by promoting inclusive student-centered teaching, reimagining life-long learning, advancing innovative interdisciplinary research, 
+        and championing civic engagement.
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <!-- SIDEBAR BUTTONS -->
+      <div class="col-md-2 d-flex flex-column align-items-start border-end">
+        <a href="index.html" class="btn btn-warning w-100 mb-3">Home</a>
+        <button type="button" class="btn btn-warning w-100 mb-3">About</button>
+        <button type="button" class="btn btn-warning w-100 mb-3">Resources</button>
+        <a href="contact.html" class="btn btn-warning w-100 mb-3">Contact Us</a>
+      </div>
+
+      <!-- MAIN BUTTONS -->
+      <div class="col-md-10 text-center">
+        <style>
+          .equal-btn {
+            height: 100px;
+            font-weight: 600;
+            font-size: 1rem;
+          }
+        </style>
+
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-5 d-flex">
+            <a href="undergradprogram.html" class="btn btn-outline-dark w-100 equal-btn">
+              Undergraduate Programs
+            </a>
+          </div>
+          <div class="col-md-5 d-flex">
+            <button class="btn btn-outline-dark w-100 equal-btn">
+              Research Opportunities
+            </button>
+          </div>
+          <div class="col-md-5 d-flex">
+            <button class="btn btn-outline-dark w-100 equal-btn">
+              Graduate Programs
+            </button>
+          </div>
+          <div class="col-md-5 d-flex">
+            <button class="btn btn-outline-dark w-100 equal-btn">
+              Career/Internship Opportunities
+            </button>
+          </div>
+          <div class="col-md-5 d-flex">
+            <button class="btn btn-outline-dark w-100 equal-btn">
+              Events
+            </button>
+          </div>
+          <div class="col-md-5 d-flex">
+            <button class="btn btn-outline-dark w-100 equal-btn">
+              Student/Faculty Spotlight
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
-
-  <a class="navbar-brand" href="#">
-    <img src="https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo" height="50">
-  </a>
-
-  <form class="d-flex mx-3" role="search" style="flex: 1; max-width: 400px;">
-    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-dark" type="submit">Search</button>
-  </form>
-
- 
-  <div class="d-flex align-items-center">
-    <div class="dropdown me-3">
-      <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Social Media
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li><a class="dropdown-item" href="#">Facebook</a></li>
-        <li><a class="dropdown-item" href="#">Twitter</a></li>
-        <li><a class="dropdown-item" href="#">Instagram</a></li>
-        <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-
-    <button class="btn btn-warning">MyUMBC</button>
-  </div>
-
-</div>
-</nav>
-
- <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">Department of Information Systems test</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Our Vision is to expand our role as global leaders at the 
-          intersection of information, technology, and people, by promoting inclusive 
-          student-centered teaching, reimagining life-long learning, advancing innovative interdisciplinary research, and championing civic engagement.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        </nav>
-
-
-<style>.button-column {
-  display: flex; /* Makes the container a flex container */
-  flex-direction: column; /* Arranges items vertically in a column */
-  align-items: flex-start; /* Aligns items to the start of the cross-axis (left) */
-  padding: 10px; /* Optional: Add some padding around the buttons */
-  /* You can add more styling here, e.g., border, background-color */
-}
-
-.button-column button {
-  margin-bottom: 10px; /* Optional: Add space between buttons */
-  padding: 10px 20px; /* Optional: Adjust button size */
-  /* Add other button styles as needed, e.g., background-color, color, border */
-}</style>
-
-<div class="button-column">
-  <button type="button" class="btn btn-warning">Home</button>
-  <button type="button" class="btn btn-warning">About</button>
-  <button type="button" class="btn btn-warning">Resources</button>
-  <a href="contact.html" class="btn btn-warning w-100">Contact Us</a>
-</div>
-
-<div class="d-flex" style="height: 230px;">
-  <div class="vr"></div>
-</div>
-
-
-<style>
-.equal-btn {
-  height: 100px; /* fixed height for all buttons */
-  font-weight: 600;
-  font-size: 1rem;
-}
-</style>
-
-
-  <div class="row g-3 justify-content-center">
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-        Undergraduate Programs
-      </button>
-    </div>
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-        Research Opportunities
-      </button>
-    </div>
-
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-       Graduate Programs
-      </button>
-    </div>
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-        Career/Internship Opportunities
-      </button>
-    </div>
-
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-        Events
-      </button>
-    </div>
-    <div class="col-md-5 d-flex">
-      <button class="btn btn-outline-dark w-100 equal-btn">
-        Student/Faculty Spotlight
-      </button>
-    </div>
-  </div>
-</div>
-
-
- 
-
-   
-
-
-
-
-
-
-
 </body>
 </html>
